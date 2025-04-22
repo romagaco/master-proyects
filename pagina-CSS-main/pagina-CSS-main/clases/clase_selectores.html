@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>selectores css</title>
+  <link rel="stylesheet" href="../css/styles_selectores.css">
+  <meta name="description" content="Repasamos los tipos de selector que se aplican en css, vamos desde algo comun hasta lo mas especifico posible">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="../img/web/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../img/web/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../img/web/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../img/web/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../img/web/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../img/web/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../img/web/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../img/web/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/web/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../img/web/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/web/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../img/web/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/web/favicon-16x16.png">
+  <link rel="manifest" href="../img/web/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../img/web/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <header>
+      <figure>
+        <img width= "150" src="../img/web/banner.png" alt="MI logo">
+      </figure>
+          <nav>
+              <ul>
+                  <li><a href="../index.html">pagina principal</a></li>
+                  <li><a href="../mision.html">Mision</a></li>
+                  <li><a href="../blog.html">Blog</a></li>
+                  <li><a href="../contacto.html">Contacto</a></li>
+                  <li><a href="../clases.html">Clases</a></li>
+              </ul> 
+  </header>
+
+  <main>
+    <h1>Selectores CSS</h1>
+    <figure>	
+      <img width="350" src="../img/clases/selectores.png" alt"selectores css">
+    </figure>
+    
+    
+    <div>
+      <h2>Selectores: identificadores de elementos dentro de una página web </h2>
+      <p>Los selectores en CSS son patrones que indican al navegador qué elementos HTML 
+        se van a seleccionar para aplicarles estilos. Son la primera parte de una regla CSS. </p>
+    </div>
+
+    <div>
+      <ul>
+        <li>Selector universal, este seleccionara todos elementos HTML
+          <pre>
+            <code>
+              * {
+                  color: red;
+                }
+            </code>
+          </pre>
+        </li>
+        <li>Selector por etiqueta, este aplicara los atributos unicamente a las etiquetas, 
+          ejemplo el color azul se aplicara unicamente a los parrafos y el verde a los elementos de las listas
+          <pre> 
+            <code>
+              p {
+                  color: blue;
+                }
+              li {
+                  color: green;
+                }
+            </code>
+          </pre>
+        </li>
+        <li>Selector por clase, este aplicara los atributos a quellas etiquetas que sean definidas como clase
+          ejemplo a "destacado" se le aplica un color naranja y un fondo oscuro, a "salmon" un color rosa.
+          <pre>
+            <code>
+              .destacado {
+                  color: orange;
+                  background-color: black;
+                }
+                
+              .salmon {
+                  color: pink;
+                }
+            </code>
+          </pre>
+        </li>
+        <li>Selector por multiclase si una etiqueta se define como dos clases distintas, esta recibe
+          los atributos de ambas calses, ademas podemos otorgar atributos unicamente a las etiquetas que posean ambos tipos de clases.
+          <pre>
+            <code>
+              .destacado.salmon {
+                font-size: 1.2rem;
+                border: 5px solid rgb(211, 211, 57);
+              }
+            </code>
+          </pre>
+        </li>
+        <li>Selector por id, se define un id, este sera unico por html, se llama utilizando el simbolo #
+          <pre>
+            <code>
+              #punk {
+                color: purple;
+              }
+            </code>
+          </pre>
+        </li>
+        <li>Selector mixto, nos permite combinar una etiqueta + clase, un id  + clase, etc
+          <pre>
+            <code>
+              h4.Olive {
+                color: Olive;
+                }            
+            </code>
+          </pre>
+        </li>
+        <li>Selector por atributos, entre corchetes [] colocamos lo especifico y por fuera que tipo de elemento buscar 
+          en el ejemplo buscamos cualqueir elemento que se defina como una multiclase destacado punk.
+          <pre>
+            <code>
+              * [class="destacado punk"] {
+                font-size: 0.5rem;
+                }
+            </code>
+          </pre>
+        </li>
+        <p>si deseas ver e interacrtuar con este codido puedes <a href="https://codepen.io/romagaco/pen/zxYWqpO" target="_blank">dar click aqui</a></p>
+      
+    <div>
+      <div>
+        <h2>Como se renderiza en un HTML</h2>
+        <img width="600" src="../img/clases/selectores1.png" alt"selectores css">
+      </div>
+  <footer>
+    <p> &copy; Betocursos 2025 - <a href="../aviso_legal.html">Aviso Legal</a></p>
+  </footer>
+
+  
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+#tipografia1 {
+  font-family: Verdana, sans-serif;
+}
+
+#tipografia2 {
+  font-family: Didot, sans-serif;
+}
+
+#tipografia3 {
+  font-family: 'FreeMono', monospace;
+}
+
+
+#tipografia4 {
+  font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: 'Akronim';
+  src: url('../fonts/Akronim-Regular.eot');
+  src: url('../fonts/Akronim-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Akronim-Regular.woff2') format('woff2'),
+      url('../fonts/Akronim-Regular.woff') format('woff'),
+      url('../fonts/Akronim-Regular.ttf') format('truetype'),
+      url('../fonts/Akronim-Regular.svg#Akronim-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+#tipografia5 {
+  font-family: 'Akronim';
+}
+
+#tipografia6 {
+  font-family: "Montserrat", sans-serif;;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+}
+
+header figure img {
+  width: 171px;
+}
+
+header figure {
+  margin: 0;
+  display:  flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+header figcaption {
+  display: none;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 56px;
+}
+
+header nav ul a {
+  font-family: "Poppins";
+  color: #424241;
+  text-decoration: none;
+  font-weight: normal;
+  background-color: orange;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}

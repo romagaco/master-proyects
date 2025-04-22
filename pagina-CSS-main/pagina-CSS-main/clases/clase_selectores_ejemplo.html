@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ejemplo de selectores css</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="description" content="ejemplos de selectores css">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="../img/web/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../img/web/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../img/web/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../img/web/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../img/web/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../img/web/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../img/web/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../img/web/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/web/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../img/web/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/web/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../img/web/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/web/favicon-16x16.png">
+  <link rel="manifest" href="../img/web/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../img/web/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <header>
+      <figure>
+        <img width= "150" src="../img/web/banner.png" alt="MI logo">
+      </figure>
+          <nav>
+              <ul>
+                  <li><a href="../index.html">pagina principal</a></li>
+                  <li><a href="../mision.html">Mision</a></li>
+                  <li><a href="../blog.html">Blog</a></li>
+                  <li><a href="../contacto.html">Contacto</a></li>
+                  <li><a href="../clases.html">Clases</a></li>
+              </ul> 
+  </header>
+
+  <main>
+    <h1>Ejercicios y Ejemplos del uso de selectores </h1>
+
+    <div>
+      <ol>
+        <li>Selecciona los elmentos div que sean hijos de otro div
+          <pre>
+            <code>
+              div > div
+            </code>
+          </pre>
+        </li>
+        <li>Selecciona el ultimo elemento de un grupo de elementos hermanos li
+          <pre>
+            <code>
+              li:last-of-type, li:last-child
+            </code>
+          </pre>
+        </li>
+        <li>Selecciona los hijos pares de un elemento li
+          <pre>
+            <code>
+              li > *:nth-child(2n)
+            </code>
+          </pre>
+        </li>
+        <li>Selecciona los hijos impares de un elemento li
+          <pre>
+            <code>
+              li > *:nth-child(2n+1)
+            </code>
+          </pre>
+        </li>
+        <li>Selecciona los elementos p que sean hijos de article
+          <pre>
+            <code>
+              artticle > p
+            </code>
+          </pre>
+        </li>
+        <li>Selecciona los p que esten dentro de un article
+          <pre>
+            <code>
+              article p
+            </code>
+          </pre>
+        </li>
+        <li>Selecciona los titulos principales h1 y los h3
+          <pre>
+            <code>
+              h1, h3
+            </code>
+          </pre>
+        </li>
+        <li>Selecciona los ol que esten dentro de body
+          <pre>
+            <code>
+              body ol
+            </code>
+          </pre>
+        </li>
+        <li>Los elementos UL que sean hijos de body
+          <pre>
+            <code>
+              body > ul
+            </code>
+          </pre>
+        </li>
+        <li>Los elementos a que sean hijos de p
+          <pre>
+            <code>
+              p > a
+            </code>
+          </pre>
+        </li>
+        <li>Los elementos div que seas descendientes de body
+          <pre>
+            <code>
+              body div
+            </code>
+          </pre>
+        </li>
+        <li>Selecciona el ultimo hijo de UL
+          <pre>
+            <code>
+              ul > *:last-child
+            </code>
+          </pre>
+        </li>
+        <li>Selecciona el primer hijo de ul
+          <pre>
+            <code>
+              ul > *:first-child
+            </code>
+          </pre>
+        </li>
+        <li>Selecciona los elementos li pares de ul
+          <pre>
+            <code>
+              ul li:nth-child(2n), ul li:nth-of-type(2n)
+            </code>
+          </pre>
+        </li>
+        <li>Selecciona los elementos li impares de ul
+          <pre>
+            <code>
+              ul li:nth-child(2n+1), ul li:nth-of-type(2n+1)
+            </code>
+          </pre>
+        </li>
+        <li>Selecciona el hijo de ul que este en la posición 3
+          <pre>
+            <code>
+              ul > *:nth-child(3)
+            </code>
+          </pre>
+        </li>
+        <li>Selecciona un párrafo con la identificación "plátano"
+          <pre>
+            <code>
+              *.rojo:first-child
+            </code>
+          </pre>
+        </li>
+        <li>Selecciona los h2 dentro de un section
+          <pre>
+            <code>
+              section h2
+            </code>
+          </pre>
+        </li>
+        <li>Selecciona el segundo hijo de un elemento section
+          <pre>
+            <code>
+              section > *:nth-child(2)
+            </code>
+          </pre>
+        </li>
+        <li>Selecciona los hijos pares de un elemento ol
+          <pre>
+            <code>
+              ol > *:nth-child(2n)
+            </code>
+          </pre>
+        </li>
+        
+  <footer>
+    <p> &copy; Betocursos 2025 - <a href="../aviso_legal.html">Aviso Legal</a></p>
+  </footer>
+
+  
+</body>
+
+</html>

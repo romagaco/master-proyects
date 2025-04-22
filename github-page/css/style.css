@@ -1,0 +1,1038 @@
+
+/* Index - main page - */ 
+.index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.index ul {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  list-style: none;
+}
+.index a {
+  display: block;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+
+}
+.index a:hover {
+  background-color: rgba(128, 0, 128, 0.425);
+}
+
+.index_text {
+  color: #333;
+  text-align: center;
+  margin-bottom: 100px;
+  max-width: 70%;
+}
+
+.index_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.index_images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.index_art {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto; /* centers the grid horizontally */
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+
+.index_img {
+  width: 100%;
+  border: solid 1px #ccc;
+  transition: transform 0.3s ease;
+}
+
+.index_img:hover {
+  transform: scale(2);
+}
+
+.index_img_title {
+  margin: 0;
+  padding: 0;
+}
+
+.index_img_text {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+/* Index - main page - ends */ 
+
+/* Coworking */ 
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: font-family: "Playfair Display", serif;
+  --black: #313131;
+  --brown: #9B9A78;
+  --bg-blue: #515DEF;
+  --color-black: #333333;
+  --color-grey: #909090;
+  --color-white: #FBFBFB;
+  --color-orange: #F38160;
+  --color-gris: #2E2F38;
+  --color-red: #FA504D;
+  --font-title: "Belgrano", sans-serif;
+  --font-text: "Poppins", sans-serif;
+}
+
+.coworking {
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-font); 
+}
+
+.container_cow {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width-page);
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+header.header_cow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+
+}
+
+.nav_principal_cow ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 56px;
+}
+
+.nav_principal_cow a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.nav_principal_cow a.active_cow {
+  color: var(--brown);
+}
+
+.nav_principal_cow a:hover {
+  color: var(--brown);
+}
+
+.login_cow ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 56px;
+  align-items: center;
+}
+
+.login_cow a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+a.button_cow {
+  display: inline-block;
+  background-color: var(--brown);
+  color:  white;
+  padding: 15px 20px;
+}
+
+a.button_cow:hover {
+  background-color: var(--black);
+  transition: all .5s ease;
+}
+
+section.hero_cow {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("../img/coworking/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  margin-bottom: 50px;
+}
+
+.hero_content_cow {
+  width: 50%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.hero_header_cow {
+  background: rgba(255, 255, 255, 0.70);
+  backdrop-filter: blur(8px);
+  padding: 35px;
+}
+
+.hero_content_cow h1 {
+  font-family: var(--secondary-font);
+  font-size: 48px;
+  color: var(--black);
+  line-height: 60px;
+  max-width: 600px;
+  margin: 0;
+  position: relative;
+}
+
+.hero_cow h1::before{
+  content: "";
+  height: 8px;
+  width: 72px;
+  position: absolute;
+  background: var(--brown);
+  right: 50px;
+  top: 22px;
+}
+
+.hero_header_cow p {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--brown);
+}
+
+.hero_list_cow ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 60%;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.hero_list_cow ul li {
+  font-weight: 300;
+  background-image: url("../img/coworking/Check.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+  padding-left: 30px;
+}
+
+.coworking_info_cow {
+  display: flex;
+  justify-content: space-between;
+  gap: 224px;
+  padding-left: 96px;
+  padding-right: 96px;
+}
+
+.coworking_info_cow img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.coworking_info_cow h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.coworking_info_cow p {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--brown);
+}
+
+/* comienza Creative agency */ 
+
+.creative {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-blue);
+  font-family: var(--font-primary);
+  background-image: url(../img/creative/smiling-creative.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+.container_creative {
+  
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+header.main_header_creative {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  display: flex; 
+  align-items: center;
+  gap: 148px;
+  margin-bottom: 40px;
+}
+
+nav.main_nav_creative ul {
+  display: flex;
+  gap: 56px;
+  list-style: none;
+  
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav.main_nav_creative a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+
+nav.main_nav_creative ul li:last-child {
+  margin-left: auto;
+  
+}
+
+nav.main_nav_creative ul li:last-child a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: var(--bg-blue);
+}
+
+nav.main_nav_creative ul li:last-child a:hover {
+  background-color: var(--color-white);
+  color: var(--bg-blue);
+  text-decoration: none;
+}
+
+nav.main_nav_creative {
+  width: 100%;
+}
+
+nav.main_nav_creative a:hover {
+  text-decoration: underline;
+}
+
+section.hero_creative {
+  width: 60%;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.hero_initial_creative {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 30px
+}
+
+.hero_title_creative {
+  font-size: 60px;
+  line-height: 1.3em;
+  margin: 0;
+  margin-bottom: 20px
+}
+
+.hero_subtitle_creative {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.hero_button_creative {
+  display: inline-block;
+  padding: 10px 12px;
+  background-color: var(--color-white);
+  text-decoration: none;
+  color: var(--color-black);
+  display: inline-flex;
+  align-items: center;
+}
+
+section.categories_creative {
+  width: 90%;
+  box-sizing: border-box;
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  padding: 30px 130px;
+  transform: translate(-160px);
+}
+
+.category_title_creative {
+  font-size: 16px;
+  color: var(--color-black);
+  
+}
+
+.category_description_creative {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-grey);
+}
+
+.category_icon_creative {
+  width: 60px;
+}
+
+/* Grocery Store */
+
+
+.container_grocery {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+header.header_grocery {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display:  flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav.nav_primary_grocery ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav.nav_primary_grocery a {
+ color: var(--color-grey);
+ font-weight: 300;
+ text-decoration: none;
+ position: relative;
+}
+
+
+.header_login_grocery ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav_primary_grocery li.active_grocery {
+  color: #F38160;
+  position: relative;
+}
+
+.nav_primary_grocery li.active_grocery::before {
+  content: '';
+  width: 80%;
+  height: 2px; 
+  background-color: #F38160; 
+  position: absolute;
+  bottom: -10px; 
+  left: 10%;
+}
+
+nav.nav_primary_grocery a:hover {
+  color: #F38160;
+  position: relative;
+}
+
+nav.nav_primary_grocery a:hover::before {
+  content: '';
+  width: 80%;
+  height: 2px; 
+  background-color: #F38160; 
+  position: absolute;
+  bottom: -10px; 
+  left: 10%;
+}
+
+.tercero_grocery {
+  display: inline-block;
+  background-color: #F38160;
+  color: white;
+  padding:  10px 25px;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+.header_login_grocery.btn2_grocery {
+  display: inline-block;
+  color: #F38160;
+}
+
+a.trucho_grocery {
+  background-color: white;
+  color: #F38160;
+  text-decoration: underline;
+}
+
+.hero_grocery {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content:  space-between;
+  
+}
+
+.hero_content_grocery {
+  width: 55%;
+  padding-top: 10px;
+}
+
+.hero_content_grocery h1 {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 70px;
+  color: var(--color-black);
+  margin-bottom: 30px;
+}
+
+.hero_content_grocery h1 span {
+  color: #F38160;
+}
+
+.hero_description_grocery {
+  color: rgb(126, 121, 121);
+  font-weight: 300;
+  font-size: 18px;
+  max-width: 70%;
+  margin-bottom: 20px;
+}
+
+.hero_search_grocery {
+  display: flex;
+  align-items: stretch;
+  width: 65%;
+  margin-bottom: 30px;
+}
+
+.hero_search_grocery input {
+  flex: 1;
+  background-color: rgb(192, 192, 192, 0.25);
+  padding: 10px 20px;
+  border: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 20px;
+  display:  inline-block;
+}
+
+.hero_search_grocery button {
+  background-color: #F38160;
+  display: inline-block;
+  width: 40px;
+  border: 0;
+  
+}
+
+.hero_search_grocery button img {
+  width: 20px;
+}
+
+.hero_info_grocery {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 65%;
+  gap: 20px;
+}
+.hero_info_grocery li {
+  width: 45%;
+  color: darkgrey;
+  font-weight: 300;
+  margin: 0;
+  position: relative;
+  left: 40px;
+
+}
+
+.hero_info_grocery li::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/grocery/check.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  left: -30px;
+  top: 5%;
+}
+
+.hero_img_grocery {
+  width: 45%;
+}
+.hero_img_grocery img {
+  max-width: 100%;
+  position: relative;
+  left: -100px;
+}
+
+.food_type_grocery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 20px;
+  margin-top: 24px;
+}
+
+.food_type_img_grocery {
+  width: 90px;
+}
+
+.food_type_title_grocery {
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.food_type_desc_grocery {
+  color: grey;
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+/* Header Business*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+.business {
+  background-image: url("../img/business/hero@2x.jpg");
+  background-position: top right;
+  background-size: 64%;
+  background-repeat: no-repeat;
+}
+
+
+.page1_business {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  
+
+}
+
+.business_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.business_header figure img {
+  width: 171px;
+}
+
+.business_header figure {
+  margin: 0;
+}
+
+.business_header figcaption {
+  display: none;
+}
+
+.business_header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 56px;
+}
+
+.business_header nav ul a {
+  font-family: "Poppins";
+  color: #424241;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.hero_content_business h1 {
+  font-family: "Bebas Neue";
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 65px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.hero_content_business {
+  max-width: 60%;
+  margin-bottom: 40px;
+}
+
+.hero1_business  {
+  padding-top: 40px;
+}
+
+.hero1_business  h1 span {
+  color: #7EDAD2;
+}
+
+@media (min-width: 1400px) and (min-height: 900px) {
+  .hero1_business  h1 span {
+    color: black;
+  }
+}
+
+.hero_content_business  p {
+  color: var(--text-and-main-gray-2, #909090);
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 440px;
+}
+
+.hero_content_business  a {
+  display: inline-block;
+  background-color: #7EDAD2;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.hero_number_business  {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin-bottom: 100px;
+
+}
+
+.big_number_business  {
+  font-family: "Bebas Neue";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #424241;
+}
+
+.hero_number_business  div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categories_business  {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  
+}
+
+.categories_business  article {
+  background-color: white;
+  padding: 20px;
+}
+
+/*  NFT Market*/
+
+
+.market {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.market::before {
+  content: "";
+  width: 42%;
+  background-color: var(--color-gris);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.market {
+  font-family: var(--font-text);
+  font-size:  16px;
+} 
+
+.container_market {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.header_market {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header_market a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.principal_nav_market {
+  margin-left: 130px;
+}
+
+.principal_nav_market a {
+  color: var(--color-gris);
+  font-weight: 300;
+}
+.principal_nav_market ul {
+  list-style: none;
+  display: flex;
+  gap: 46px;
+}
+
+.login_market {
+  margin-left: auto;
+}
+
+.login_market ul {
+  list-style: none;
+  display: flex;
+  gap: 27px;
+}
+
+.btn_market {
+  display: inline-block;
+  background-color: var(--color-red);
+  padding: 10px 30px;
+}
+
+.btn_market:hover {
+  background-color: white;
+  color: #FA504D;
+}
+
+.main_market {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.hero_market {
+grid-column: 1 / span 1;
+margin-bottom: 20px;
+padding-top: 40px;
+}
+
+.featured_market {
+  grid-column: 1 / span 1;
+  padding-right: 40px;
+}
+
+.nft_market {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+  margin-left: 50px;
+  padding: 30px;
+}
+
+.hero_market h1 {
+  font-family: var(--font-title);
+  font-size: 55px;
+  font-weight: 500;
+  padding-right: 40px;
+  line-height: 65px;
+  margin-bottom: 30px;
+}
+
+.hero_subtitle_market {
+  color: #8E8E8E;
+  font-weight: 300;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.hero_buttons_market {
+  display: flex;
+  align-items:  center;
+  gap: 30px;
+}
+
+.hero_buttons_market a:first-child {
+  display: inline-block;
+  background-color: var(--color-red);
+  padding: 10px 30px;
+  text-decoration:  none;
+  color: white;
+  padding: 12px 60px;
+}
+
+.featured_title_market {
+  font-family: var(--font-title);
+  margin-bottom: 20px;
+}
+
+.featured_imgs_market {
+  display:  flex;
+  justify-content: space-between;
+  z-index: -1;
+}
+
+.featured_imgs_market img {
+  width: 45%;
+  border: 1px solid gray;
+  padding: 4px;
+  
+}
+
+.nft_imgcontainer_market img {
+  max-width: 100%;
+  position: relative;
+  z-index: -1;
+  
+}
+
+.nft_data_market {
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: -80px;
+  padding-bottom: 20px;
+}
+
+.nft_header_market {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.nft_owner_market {
+  display: flex;
+}
+
+.nft_ownerdata_market {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.nft_username_market {
+  color: var(--color-gris);
+  font-weight: 300;
+}
+
+.nft_name_market {
+  font-weight: bold;
+}
+
+.nft_price_market {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.nft_price_current_market {
+  color: var(--color-gris);
+  font-weight: 300;
+}
+
+.nft_price_number_market {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nft_buttons_market {
+  justify-content:  space-between;
+  display: flex;
+}
+
+.nft_button1_market {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--color-red);
+  padding: 10px 30px;
+  color: white;
+
+}
+
+.nft_button2_market {
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  padding: 10px 30px;
+  color: var(--color-red);
+
+}
+
+.nft_button1_market:hover {
+  background-color: white;
+  color: var(--color-red);
+}
+.nft_button2_market:hover {
+  background-color: var(--color-red);
+  color: white;
+}
+
+.nft_numbers_market {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  color: white;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  align-items: center;
+}
+
+
+.nft_number_market {
+  color: var(--color-red);
+  font-size: 22px;
+}
